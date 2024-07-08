@@ -1,39 +1,24 @@
 package coreJava;
 
 public class MethodDemo {
-	int a=10,b=20;
-	public void show()
-	{
-		System.out.println("Show method will displyed.....");
-	}
-	public void add()
-	{
-		System.out.println("Addition of two number is"+(a+b));
-	}
-	public void sub()
-	{
-		int a=56,b=8;
-		int res=(a-b);
-		System.out.println("Subtraction of two number is :"+res);
-	}
-	public void mul(int a, int b)
-	{
-		System.out.println("Multiplication of two number is"+(a*b));
-	}
-	public void div(int a, int b)
-	{
-		System.out.println("Division of two number is"+(a/b));
-	}
-	
+	public void M1()
+	 {
+		System.out.println("M1 is calling");
+		M2();
+	 }
+	public void M2()
+	 {
+		System.out.println("M2 is calling");
+		M3();
+	 }
+	public void M3()
+	 {
+		System.out.println("M3 is calling");
+	 }
 
 	public static void main(String[] args) {
-		MethodDemo m1 =new MethodDemo();
-		m1.show();
-		m1.add();
-		m1.sub();
-		m1.mul(4, 3);
-		m1.div(20, 4);
-		
+		 MethodDemo obj=new  MethodDemo();
+		 obj.M1();
 
 	}
 
